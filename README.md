@@ -20,18 +20,18 @@ The speed at which pulling song data from the S3 bucket was quite slow and burne
 
 ## Project Files
 
-analysis_sql.py - Stand alone script to display a sample of analytical querires run against the data warehouse after it's populated.
+- analysis_sql.py - Stand alone script to display a sample of analytical querires run against the data warehouse after it's populated.
 
-awsconfig.py - Class to more easily manage configuration parameters across scripts.
+- awsconfig.py - Class to more easily manage configuration parameters across scripts.
 
-create_tables.py - Script to drop and create database tables.
+- create_tables.py - Script to drop and create database tables.
 
-data_warehouse.cfg - AWS configuration paremeters for the AWS services: IAM, EC2, Redshift, and S3. When setting up local environment to run project, it is assumed the AWS credentials are available either through ~/.aws/credentials or in the environment variables.
+- data_warehouse.cfg - AWS configuration paremeters for the AWS services: IAM, EC2, Redshift, and S3. When setting up local environment to run project, it is assumed the AWS credentials are available either through ~/.aws/credentials or in the environment variables.
 
-etl.py - Script to load the staging tables and then pull records from the staging tables into the star-schema data warehouse tables.
+- etl.py - Script to load the staging tables and then pull records from the staging tables into the star-schema data warehouse tables.
 
-redshift_start.py - IaC script to configure and launch a Redshift cluster.
+- redshift_start.py - IaC script to configure and launch a Redshift cluster.
 
-redshift_stop.py - IaC script to stop a running Redshift cluster.
+- redshift_stop.py - IaC script to stop a running Redshift cluster.
 
-sql_queries.py - Script containing the SQL queries used by the create_tables.py and etl.py scripts.
+- sql_queries.py - Script containing the SQL queries used by the create_tables.py and etl.py scripts.
